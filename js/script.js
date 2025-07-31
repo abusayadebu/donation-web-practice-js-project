@@ -1,4 +1,5 @@
 
+// -----Toggle Feature between donation btn and subscribe btn
 document.getElementById("subscribe-btn").addEventListener("click", function(){
     const subscribeSection = document.getElementById("subscribe-detail-section");
     subscribeSection.classList.remove("hidden")
@@ -15,3 +16,5 @@ document.getElementById("one-time-donation").addEventListener("click", function(
     const hideSubscribeSection = document.getElementById("subscribe-detail-section");
     hideSubscribeSection.classList.add("hidden");
 })
+// ------------------------
+
