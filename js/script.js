@@ -29,7 +29,9 @@ document.getElementById("rupali-btn").addEventListener("click", function(){
     rupaliDetails.classList.remove("hidden")
 
     // hide all another details
-    sonaliDetails.classList.add("hidden")
+    sonaliDetails.classList.add("hidden");
+    IslamiDetails.classList.add("hidden");
+    janataDetails.classList.add("hidden");
 })
 
 
@@ -38,4 +40,24 @@ document.getElementById("sonali-btn").addEventListener("click", function(){
 
     // hide another details
     rupaliDetails.classList.add("hidden");
+    janataDetails.classList.add("hidden");
+    IslamiDetails.classList.add("hidden");
+})
+
+document.getElementById("islami-btn").addEventListener("click", function(){
+    IslamiDetails.classList.remove("hidden");
+    // hide another details
+    sonaliDetails.classList.add("hidden");
+    rupaliDetails.classList.add("hidden");
+    janataDetails.classList.add("hidden");
+})
+
+document.getElementById("janata-btn").addEventListener("click", function(){
+    janataDetails.classList.remove("hidden");
+
+    // hide another details
+    IslamiDetails.classList.add("hidden");
+    sonaliDetails.classList.add("hidden");
+    rupaliDetails.classList.add("hidden");
+
 })
