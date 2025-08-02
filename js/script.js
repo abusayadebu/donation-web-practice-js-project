@@ -18,3 +18,24 @@ document.getElementById("one-time-donation").addEventListener("click", function(
 })
 // ------------------------
 
+
+// toggle feature between bank details btns---
+    const sonaliDetails = document.getElementById("sonali-details");
+    const rupaliDetails = document.getElementById("rupali-details")
+    const IslamiDetails = document.getElementById("islami-details");
+    const janataDetails = document.getElementById("janata-details");
+
+document.getElementById("rupali-btn").addEventListener("click", function(){
+    rupaliDetails.classList.remove("hidden")
+
+    // hide all another details
+    sonaliDetails.classList.add("hidden")
+})
+
+
+document.getElementById("sonali-btn").addEventListener("click", function(){
+    sonaliDetails.classList.remove("hidden");
+
+    // hide another details
+    rupaliDetails.classList.add("hidden");
+})
