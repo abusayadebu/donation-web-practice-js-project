@@ -1,16 +1,29 @@
 
 // -----Toggle Feature between donation btn and subscribe btn
+const oneTimeDonationBTn = document.getElementById("one-time-donation")
+const subscribeBtn = document.getElementById("subscribe-btn");
+
 document.getElementById("subscribe-btn").addEventListener("click", function(){
     const subscribeSection = document.getElementById("subscribe-detail-section");
     subscribeSection.classList.remove("hidden")
+    // make activebtn
+    activateButton(subscribeBtn);
+    // hide another btn
+    removeActiveButton(oneTimeDonationBTn);
+
     // hide on-time-donation-btn
     const hideDonationSection = document.getElementById("details-section")
     hideDonationSection.classList.add("hidden");
 
 })
+
 document.getElementById("one-time-donation").addEventListener("click", function(){
     const detailsSection = document.getElementById("details-section");
     detailsSection.classList.remove("hidden");
+    // make active btn
+    activateButton(oneTimeDonationBTn);
+    // hide another btn
+    removeActiveButton(subscribeBtn);
 
     // hide subscribe section
     const hideSubscribeSection = document.getElementById("subscribe-detail-section");
